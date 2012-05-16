@@ -1,0 +1,38 @@
+{
+  "name": "picturetuber",
+  "preferGlobal": "true",
+  "version": "0.0.1",
+  "author": "Buttreygoodness <buttreygoodness@gmail.com>",
+  "description": "An ANSI picture parser. Just a CLI wrapper for the picture-tuber package. (thanks, Substack)",
+  "bin": {
+    "picturetuber": "./bin/picturetuber"
+  },
+  "scripts": {
+    "start": "node ./bin/picturetuber",
+    "test": "vows --spec --isolate"
+  },
+  "main": "./lib/picturetuber",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "cli",
+    "image",
+    "picture-tube"
+  ],
+  "dependencies" : {
+    "optimist"   :  "0.3.x",
+    "picture-tube" :  ">= 0.0.4"
+  },
+  "noAnalyze": true,
+  "devDependencies": {
+    "vows"    :  "0.5.x"
+  },
+  "bundleDependencies": [
+  ],
+  "license": "MIT",
+  "engine": {
+    "node": ">=0.6"
+  }
+}
